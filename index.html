@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+
+
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,8 +14,146 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+            background-color: #ddd;
+            font-size: 14px;
+        }
+        
+        .blue {
+            color: blue;
+        }
+        
+        header {
+            background-image: url("bg.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 100px;
+        }
+        
+        #logo {
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        #logo img {
+            max-width: 120px;
+            border: 5px solid #fff;
+            border-radius: 100%;
+        }
+        
+        #logo h1 {
+            letter-spacing: 0.15em;
+            color: #fff;
+            text-shadow: 1px 1px 0px #000;
+        }
+        
+        nav {
+            margin: 0 0 30px 0;
+            padding: 10px 0;
+            text-align: center;
+            background: #fff;
+        }
+        
+        nav ul {
+            margin: 0 10px;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin: 0 20px;
+            display: inline-block;
+        }
+        
+        nav ul li a {
+            padding: 15px 10px;
+            text-decoration: none;
+            color: #999;
+            font-weight: bold;
+        }
+        
+        nav ul li a.selected {
+            color: #000;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: -100px auto 0;
+            background-color: #fff;
+        }
+        
+        section {
+            padding: 30px 20px;
+        }
+        
+        section h2 {
+            padding: 10px 0 20px 0;
+            text-align: center;
+            letter-spacing: 0.15em;
+        }
+        
+        footer {
+            padding: 20px 0;
+            font-size: 93%;
+            text-align: center;
+            background-color: #ccc;
+            color: #666;
+        }
+    </style>
+
+
+</head>
+
+<head>
+    <meta charset="utf-8" />
+    <title>小坂　有沙| About</title>
+    <link rel="stylesheet" href="about.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="selected">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="logo">
+            <img src="arisaprofile.jpg" alt="" />
+            <h1>小坂　有沙</h1>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About</h2>
+            <h3>自己紹介</h3>
+            <p>小坂　有沙</p>
+            <p>横浜市青葉区出身。渋谷のIT企業で働いています。</p>
+            <p>最近はプログラミングを学び、<span class="blue">html</span>を使ってようやくサイトを作ることができました。</p>
+            <p>私のポートフォリオを見て気になった方は、<a href="contact.html">Contact</a>よりご連絡お願い致します。</p>
+            <h3>リンク</h3>
+            <ul>
+                <li><a href="https://github.com/arisakosaka/arisakosaka.github.io" target="_blank">Github</a></li>
+                <li><a href="https://www.twitter.com/tarokirameki" target="_blank">Twitter</a></li>
+            </ul>
+        </section>
+        <footer>
+            <p>&copy; 2016 Arisa Kosaka .</p>
+        </footer>
+
+    </div>
+</body>
+
 </html>
+
